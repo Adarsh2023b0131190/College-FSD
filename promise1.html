@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>INPUT DATA</h1>
+        Your Name <input type="text" id="a">
+        <br><br>
+        <label for="">Language</label>
+        <select name="" id="">
+            <option value="">C</option>
+            <option value="">Java</option>
+            <option value="">Python</option>
+        </select>
+         <br><br>
+        Address<input type="text">
+        <br><br>
+        <button onclick="a1()">Submit</button>
+        <p id="b"></p>
+    </div>
+    <script>
+        function a1(){
+          let x=document.getElementById("a");
+          let y=x.value;
+          document.getElementById("b").innerHTML=y;  
+        }
+    </script>
+</body>
+</html>
