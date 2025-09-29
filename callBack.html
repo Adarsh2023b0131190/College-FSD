@@ -6,14 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-<script>
-        console.log("1");
-        console.log("2");
 
-        setTimeout(()=>{
-            console.log("Hello");
-        },4000);
-        console.log("3");     
-    </script>
+    <p id="a"></p>
+   <script>
+    function sum(a,b){
+        console.log(a+b);
+    }
+    function cal(a,b,callback){
+        callback(a,b);
+    }
+
+    cal(10,20,sum)
+   </script>
 </body>
 </html>
