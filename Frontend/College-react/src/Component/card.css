@@ -1,0 +1,13 @@
+
+#adi{
+    border:5px solid rgb(0, 0, 0);
+    height: 300px;
+    width: 200px;
+    background-color: blue;
+    color: yellow;
+    border-radius: 40px;
+}
+
+img{
+    border-radius: 50%;
+}
