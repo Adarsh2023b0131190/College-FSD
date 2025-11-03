@@ -40,8 +40,22 @@ function App() {
     <>
       <h1>College React</h1>
       <h2>Counter Value: {counter}</h2>
-      <button onClick={addValue}>Add Value</button><br />
-      <button onClick={removeValue}>Remove Value</button>
+      <button onClick={addValue} style={{
+          backgroundColor: "red",
+          color: "white",
+          padding: "10px 20px",
+          border: "none",
+          borderRadius: "5px",
+          cursor: "pointer",
+        }}>Add Value</button><br />
+      <button onClick={removeValue} style={{
+          backgroundColor: "green",
+          color: "white",
+          padding: "10px 20px",
+          border: "none",
+          borderRadius: "5px",
+          cursor: "pointer",
+        }}>Remove Value</button>
     </>
   )
 }
