@@ -2,15 +2,7 @@ import React from 'react';
 import Card from './Component/Card';
 import Navbar from './Component/navBar';
 
-function App1() {
-  return (
-    <div>
-      <Navbar/>
-    </div>
-  );
-}
-
-function Usestate(){
+function change(){
   function change(){
     console.log("Hello");
   }
@@ -21,4 +13,4 @@ function Usestate(){
   )
 }
 
-export default App1;
+export default change;
