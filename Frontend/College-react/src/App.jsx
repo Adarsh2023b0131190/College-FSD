@@ -1,62 +1,80 @@
-// import React from 'react';
-// import Card from './Component/Card';
-// import Navbar from './Component/navBar';
+// // import React from 'react';
+// // import Card from './Component/Card';
+// // import Navbar from './Component/navBar';
 
 
-// function App1() {
-//   return (
-//     <div>
-//       <Navbar/>
-//     </div>
-//   );
-// }
+// // function App1() {
+// //   return (
+// //     <div>
+// //       <Navbar/>
+// //     </div>
+// //   );
+// // }
 
-// function Usestate(){
-//   function change(){
-//     console.log("Hello");
+// // function Usestate(){
+// //   function change(){
+// //     console.log("Hello");
+// //   }
+// //   return(
+// //     <div>
+// //       <button onClick={change}>Click</button>
+// //     </div>
+// //   )
+// // }
+
+// import { useState } from 'react'
+// import './App.css'
+
+// function App() {
+//   const [counter, setCounter] = useState(0)
+
+//   const addValue = () => {
+//     if (counter < 20) setCounter(counter + 1)
 //   }
-//   return(
-//     <div>
-//       <button onClick={change}>Click</button>
-//     </div>
+
+//   const removeValue = () => {
+//     if (counter > 0) setCounter(counter - 1)
+//   }
+
+//   return (
+//     <>
+//       <h1>College React</h1>
+//       <h2>Counter Value: {counter}</h2>
+//       <button onClick={addValue} style={{
+//           backgroundColor: "red",
+//           color: "white",
+//           padding: "10px 20px",
+//           border: "none",
+//           borderRadius: "5px",
+//           cursor: "pointer",
+//         }}>Add Value</button><br />
+//       <button onClick={removeValue} style={{
+//           backgroundColor: "green",
+//           color: "white",
+//           padding: "10px 20px",
+//           border: "none",
+//           borderRadius: "5px",
+//           cursor: "pointer",
+//         }}>Remove Value</button>
+//     </>
 //   )
 // }
 
-import { useState } from 'react'
-import './App.css'
+// export default App
+
+
+import React from 'react'
+import Book from "./Component menu/Book";
+
+
 
 function App() {
-  const [counter, setCounter] = useState(0)
-
-  const addValue = () => {
-    if (counter < 20) setCounter(counter + 1)
-  }
-
-  const removeValue = () => {
-    if (counter > 0) setCounter(counter - 1)
-  }
-
   return (
-    <>
-      <h1>College React</h1>
-      <h2>Counter Value: {counter}</h2>
-      <button onClick={addValue} style={{
-          backgroundColor: "red",
-          color: "white",
-          padding: "10px 20px",
-          border: "none",
-          borderRadius: "5px",
-          cursor: "pointer",
-        }}>Add Value</button><br />
-      <button onClick={removeValue} style={{
-          backgroundColor: "green",
-          color: "white",
-          padding: "10px 20px",
-          border: "none",
-          borderRadius: "5px",
-          cursor: "pointer",
-        }}>Remove Value</button>
-    </>
+    <div>
+      <Book />
+      <Book />
+      <Book />
+    </div>
   )
 }
 
