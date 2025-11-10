@@ -1,15 +1,15 @@
-import React from 'react'
-import './book.css'
+import React from "react";
+import "./Book.css";
 
-function Book() {
+function Book({ title, subject, image }) {
   return (
-    <div id='book'>
-        <img src="https://media.gettyimages.com/id/157482029/photo/stack-of-books.jpg?s=612x612&w=gi&k=20&c=_Yaofm8sZLZkKs1eMkv-zhk8K4k5u0g0fJuQrReWfdQ=" alt="" />
-      <h1>Title: MATH</h1>
-      <h1>250</h1>
+    <div className="book-card">
+      <img src={image} alt={title} />
+      <h3>{title}</h3>
+      <p>Subject: {subject}</p>
+      <button>View Details</button>
     </div>
-  )
+  );
 }
 
-export default Book
-
+export default Book;
