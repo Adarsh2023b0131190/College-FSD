@@ -130,7 +130,7 @@
 
 import React from "react";
 import "./App.css";
-import Book from "./component/Book/index.jsx";
+import Link1 from "./Component menu/Link1";
 
 function App() {
   return (
@@ -144,29 +144,10 @@ function App() {
           <li>Contact</li>
         </ul>
       </nav>
+      <Link1></Link1>
 
-      <div className="book-section">
-        <Book
-          title="Physics for Beginners"
-          subject="Physics"
-          image="https://m.media-amazon.com/images/I/51eQW7F7N8L.jpg"
-        />
-        <Book
-          title="Mathematics Simplified"
-          subject="Maths"
-          image="https://m.media-amazon.com/images/I/61Nf2bRjSDL.jpg"
-        />
-        <Book
-          title="World History Essentials"
-          subject="History"
-          image="https://m.media-amazon.com/images/I/51z+5MB1pDL.jpg"
-        />
-        <Book
-          title="Introduction to Programming"
-          subject="Computer Science"
-          image="https://m.media-amazon.com/images/I/51FjK9bKwbL.jpg"
-        />
-      </div>
+     
+   
     </div>
   );
 }
