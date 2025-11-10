@@ -128,27 +128,60 @@
 // export default App;
 
 
-import React from "react";
-import "./App.css";
-import Link1 from "./Component menu/Link1";
+// import React from "react";
+// import "./App.css";
+// import Link1 from "./Component menu/Link1";
 
-function App() {
-  return (
-    <div>
-      <nav className="navbar">
-        <h1>📚 Book Haven</h1>
-        <ul>
-          <li>Home</li>
-          <li>Subjects</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
-      <Link1></Link1>
+// function App() {
+//   return (
+//     <div>
+//       <nav className="navbar">
+//         <h1>📚 Book Haven</h1>
+//         <ul>
+//           <li>Home</li>
+//           <li>Subjects</li>
+//           <li>About</li>
+//           <li>Contact</li>
+//         </ul>
+//       </nav>
+//       <Link1></Link1>
 
      
    
-    </div>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import "./App.css";
+import Link1 from "./Component menu/Link1";
+import Login from "./components/Login";
+import Register from "./components/Register";
+
+function App() {
+  return (
+    <Router>
+      <nav className="navbar">
+        <h1>📚 Book Haven</h1>
+        <ul>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/subjects">Subjects</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
+          <li><Link to="/login">Login</Link></li>
+          <li><Link to="/register">Register</Link></li>
+        </ul>
+      </nav>
+
+      <Routes>
+        <Route path="/" element={<Link1 />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+      </Routes>
+    </Router>
   );
 }
 
